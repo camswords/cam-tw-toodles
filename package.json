@@ -1,0 +1,29 @@
+{
+  "name": "cam-tw-toodles",
+  "private": true,
+  "repository": "https://github.com/camswords/cam-tw-toodles",
+  "version": "0.0.1",
+  "dependencies": {
+    "bluebird": "*",
+    "express": "*",
+    "extend": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-nodemon": "*",
+    "gulp-stylus": "*",
+    "gulp-uglify": "*",
+    "jade": "*",
+    "jquery": "*",
+    "lodash": "*",
+    "nib": "*",
+    "require-dir": "*",
+    "streamqueue": "*",
+    "browserify": "*",
+    "vinyl-source-stream": "*",
+    "vinyl-buffer": "*"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "postinstall": "gulp styles && gulp scripts"
+  }
+}
