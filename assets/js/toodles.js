@@ -7,4 +7,10 @@ window.$ = $;
 
 $(document).ready(function() {
     modules.execute($('.dynamic-module'));
+    
+    $('#mute').click(function() {
+        if (window.toggleSound) { 
+            window.toggleSound(); 
+        }
+    });
 });

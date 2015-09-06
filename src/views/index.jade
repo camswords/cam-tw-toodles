@@ -10,6 +10,28 @@ html
     body
         
         | Toodles!
+
+        canvas#canv
+
+        p#mute mute
+
+        a(href="https://soundcloud.com/chrissij") Background Music - ChrissiJ
+        a(href="https://github.com/Zolmeister/avabranch") Game - Zolmeister
         
-       
+        audio#bgaudio(autoplay, loop)
+            source(src="/avabranch/audio/background.ogg")
+            source(src="/avabranch/audio/background.mp3")
+            
+        div#controls controls
+            
+        script(src="/avabranch/js/util.js")
+        script(src="/avabranch/js/controls.js")
+        script(src="/avabranch/js/hud.js")
+        script(src="/avabranch/js/powerups.js")
+        script(src="/avabranch/js/line.js")
+        script(src="/avabranch/js/player.js")
+        script(src="/avabranch/js/blocks.js")
+        script(src="/avabranch/js/game.js")
+        script(src="/avabranch/js/main.js")
+        
         .dynamic-module(data-name="track-page-view", data-tracking-id='#{config.googleAnalyticsApiKey()}')

@@ -1,4 +1,5 @@
 .idea
 node_modules
-public/
+public/scripts.js
+public/styles.css
 npm-debug.log
