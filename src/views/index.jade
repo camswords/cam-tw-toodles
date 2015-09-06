@@ -9,20 +9,30 @@ html
 
     body
         
-        | Toodles!
-
+        .message
+            p Wow you are amazing! But can you beat my high score of 13,938?
+            p I miss you already.
+            p Cheers, Cam.
+            
+            .attribution
+                | Background Music - 
+                a(href="https://soundcloud.com/chrissij", target='_new') ChrissiJ
+            .attribution
+                | Game - 
+                a(href="https://github.com/Zolmeister/avabranch", target='_new') Zolmeister
+            
+         
+            
         canvas#canv
 
-        p#mute mute
-
-        a(href="https://soundcloud.com/chrissij") Background Music - ChrissiJ
-        a(href="https://github.com/Zolmeister/avabranch") Game - Zolmeister
+        
         
         audio#bgaudio(autoplay, loop)
             source(src="/avabranch/audio/background.ogg")
             source(src="/avabranch/audio/background.mp3")
             
-        div#controls controls
+        .who-cares-controls 
+            div#controls controls
             
         script(src="/avabranch/js/util.js")
         script(src="/avabranch/js/controls.js")
